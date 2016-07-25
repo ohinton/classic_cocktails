@@ -1,0 +1,9 @@
+<h1>Recipes with <%= @ingredient.name %></h1>
+
+<ul>
+  <% if @ingredient.recipes() %>
+  <% @ingredient.recipes.each do | recipe | %>
+  <li><a href="/recipes/<%= recipe.id %>"><%= recipe.name %></a></li>
+  <% end %>
+  <% end %>
+</ul>
