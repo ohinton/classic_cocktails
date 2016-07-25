@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: cocktail_development
+
+test:
+  adapter: postgresql
+  database: cocktail_test
