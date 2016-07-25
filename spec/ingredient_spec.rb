@@ -10,4 +10,10 @@ describe(Ingredient) do
     ingredient = Ingredient.create({:name => "test name"})
     expect(ingredient.name()).to(eq("Test Name"))
   end
+
+  # NEED TO FIGURE OUT HOW TO WRITE THIS SPEC! #
+  #   describe("#recipes") do
+  # end
+
+
 end
