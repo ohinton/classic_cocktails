@@ -1,0 +1,12 @@
+<h1>Choose your ingredients:</h1>
+<form action="/ingredients/results" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <select name="ingredient">
+  <% if @ingredients %>
+    <% @ingredients.each do | ingredient |  %>
+      <option value="<%= ingredient.id %>"><%= ingredient.name %></option>
+    <% end %>
+    <% end %>
+    </select>
+    <button class="btn" type="submit">Find cocktail recipes with this ingredient</button>
+</form>
