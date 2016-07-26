@@ -11,9 +11,14 @@ describe(Ingredient) do
     expect(ingredient.name()).to(eq("Test Name"))
   end
 
-  # NEED TO FIGURE OUT HOW TO WRITE THIS SPEC! #
-  #   describe("#recipes") do
-  # end
-
+  describe("#recipes") do
+    it("belongs to many recipes") do
+      test_ingredient = Ingredient.create({:name => "test ingredient"})
+      test_recipe1 = Recipe.create({:name => "test recipe1"})
+      test_recipe2 = Recipe.create({:name => "test recipe2"})
+      test_ingredient.recipes.push(test_recipe1, test_recipe2)
+      expect(test_ingredient.recipes()).to(eq([test_recipe1, test_recipe2]))
+    end
+  end
 
 end
