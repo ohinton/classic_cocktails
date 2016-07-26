@@ -14,7 +14,15 @@ get ("/ingredients") do
   erb(:ingredients)
 end
 
-get ("/ingredients/results") do
+get ("/ingredients/recipes") do
   @ingredient = Ingredient.find(params.fetch('id').to_i())
+  @recipes = Recipes.all
+  erb(:results)
+end
+
+post ("/ingredients/recipes") do
+  ingredient_id = params.fetch('ingredient')
+  @ingredient = Ingredient.find(ingredient_id)
+  @recipes = Recipe.all
   erb(:results)
 end
