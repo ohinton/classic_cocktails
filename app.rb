@@ -10,6 +10,7 @@ get ("/") do
 end
 
 get ("/ingredients") do
+  @ingredients = Ingredient.all
   erb(:ingredients)
 end
 
