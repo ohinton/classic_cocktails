@@ -1,3 +1,31 @@
 body {
-  background-color: red; 
+  /*background-color: red;*/
+  background-image: url(".../img/happy-drinker.jpg");
+  background-repeat: no-repeat;
+  font-family: 'Poiret One', cursive;
+}
+
+.landing-title {
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle  {
+  display: flex;
+  justify-content: center;
+}
+
+/*.enter {
+  margin-left: 45%;
+  margin-right: 55%;
+  height: 45px;
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 5%;
+  font-family: 'Poiret One', cursive;
+}*/
+
+.options {
+  display: flex;
+  justify-content: space-between;
 }
