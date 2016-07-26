@@ -8,6 +8,7 @@ ingredient_list.each do |name|
   Ingredient.create(name: name)
 end
 
+
 glass_list = ["Highball", "Martini", "Shot", "Oldfashion", "Bucket"]
 
 glass_list.each do |name|

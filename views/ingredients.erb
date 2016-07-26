@@ -15,8 +15,7 @@
 
 <div class="test-input">
 <h2>Choose Your Liqour</h2>
-  <form action="/ingredients/results" method="post">
-    <input type="hidden" name="_method" value="patch">
+  <form action="/ingredients/recipes" method="post">
     <select class="browser-default" name="ingredient">
     <option value="" disabled selected>Pick Your Poison</option>
     <% if @ingredients %>
