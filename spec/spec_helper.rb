@@ -21,10 +21,6 @@ RSpec.configure do | config |
       item.destroy()
     end
 
-    Measurement.all().each do | item |
-      item.destroy()
-    end
-
     Glass.all().each do | item |
       item.destroy()
     end

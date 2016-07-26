@@ -11,6 +11,7 @@ describe(Ingredient) do
     expect(ingredient.name()).to(eq("Test Name"))
   end
 
+
   # NEED TO FIGURE OUT HOW TO WRITE THIS SPEC! #
   #   describe("#recipes") do
   # end
