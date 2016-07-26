@@ -4,25 +4,38 @@ padding: 0;
 }
 
 body {
-  background-repeat: no-repeat;
   font-family: 'Poiret One', cursive;
 }
 
-.body img {
-  width: 100vw;
-  height: 100vw;
+#first-page {
+  background-image: url("../img/happy-drinkers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*height: auto;*/
+  /*width: 100vw;*/
 }
 
 .landing-title {
   display: flex;
   justify-content: center;
-
+  color: steelblue;
 }
 
 .subtitle  {
   display: flex;
   justify-content: center;
+  color: white;
+  font-weight: bold;
 }
+
+.subtitle a {
+    text-decoration: none;
+    color: white;
+}
+.subtitle a:hover {
+    color: steelblue;
+}
+
 
 .options {
   display: flex;
@@ -35,11 +48,12 @@ body {
 
 .nav-wrapper {
   background-color: black !important;
-  padding: 1em;
+  padding-left: 1em;
+  margin: 0;
 }
 
 .nav-wrapper a:hover {
-  color: red;
+  color: steelblue;
 }
 
 .header img {
@@ -60,3 +74,20 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
+h2  {
+  display: flex;
+  justify-content: center;
+}
+
+.test-input {
+  display: flex;
+  justify-content: center;
+}
+
+ .generic-cocktails {
+  display: flex;
+  justify-content: center;
+}
+
+/*//media queries//*/
