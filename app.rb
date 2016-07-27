@@ -35,3 +35,8 @@ get ("/recipes/:id") do
   @glass = Glass.find(glass_id)
   erb(:recipe_info)
 end
+
+get ("/recipes") do
+  @recipes = Recipe.all
+  erb(:recipes)
+end
