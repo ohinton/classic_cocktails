@@ -61,7 +61,5 @@ ingredient_recipes_list = [
 ingredient_recipes_list.each do |ingredient_id, recipe_id|
   recipe = Recipe.find(recipe_id)
   ingredient = Ingredient.find(ingredient_id)
-
   recipe.ingredients.push(ingredient)
-  # ingredient.recipes.push(recipe_id)
 end

@@ -20,7 +20,7 @@ describe("the recipes with chosen ingredient route", :type => :feature) do
     visit "/"
     click_link("Here")
     select("Gin", :from => "ingredient")
-    click_button("Find Recipes")
+    click_button("Find recipes")
     expect(page).to have_content("Recipes with Gin")
   end
 end
