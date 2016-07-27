@@ -52,10 +52,17 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   font-family: 'Poiret One', cursive;
-  font-size: 16px;
-  padding: 4em;
-  margin: 2em;
   overflow: auto;
+  font-size: 30px;
+}
+
+.options a {
+  color: black;
+  padding: 1em;
+}
+
+.options a:hover {
+  color: steelblue;
 }
 
 .nav-wrapper {
@@ -80,6 +87,10 @@ body {
   align-items: center;
   width: 20em;
   padding-left: 2em;
+}
+
+.btn {
+  background-color: steelblue !important;
 }
 
 h1 {
@@ -112,7 +123,7 @@ h2  {
 
 .cocktail-instructions {
   margin-top: 1em;
-  width: 40em;
+  width: 30em;
   overflow: auto;
 }
 
