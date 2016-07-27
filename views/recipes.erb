@@ -1,0 +1,22 @@
+<nav>
+<div class="nav-wrapper">
+  <a href="/" class="brand-logo">Classic Cocktails</a>
+  <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <li><a href="sass.html">Home</a></li>
+    <li><a href="badges.html">Spirits</a></li>
+    <li><a href="collapsible.html">Ingredients</a></li>
+    <li><a href="collapsible.html">Archive</a></li>
+  </ul>
+</div>
+</nav>
+<div class="header">
+  <img src="/img/speakeasy-primary.jpg" alt="" />
+</div>
+<h1>Cocktail Archive</h1>
+<div class="drink-list">
+<ul>
+  <% @recipes.each() do |recipe| %>
+  <li><a href="/recipes/<%= recipe.id() %>"><%= recipe.name() %></a></li>
+  <% end %>
+</ul>
+</div>
