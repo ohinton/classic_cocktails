@@ -30,7 +30,6 @@ end
 
 get ("/recipes/:id") do
   @recipe = Recipe.find(params.fetch('id').to_i())
-  @ingredient = Ingredient.find(ingredient_id)
   glass_id = @recipe.glass_id
   @glass = Glass.find(glass_id)
   erb(:recipe_info)
