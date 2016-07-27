@@ -27,15 +27,39 @@ recipe_list = [
   ["Ward 8", "Add 2 oz Rye whiskey, .5 oz Lemon juice, 5 oz Orange juice, and 2 tsp Grenadine to a shaker and fill with ice.  Shake, strain into a chilled martini glass, and garnish with 2 speared cherries.", 2],
   ["Dubonnet Cocktail", "Add 1.5 oz Dubonnet Rouge, 1.5 oz Gin and 1 dash Angostura bitters to a mixing glass and fill with ice. Stir, and strain into a Martini glass. Garnish with a lemon twist.", 2],
   ["Manhattan", "Add 2oz Rye whiskey, .5oz sweet vermouth, and a few drops of bitters to a shaker with ice and mix (do NOT shake) with a spoon. Strain into a chilled martini glass. Garnish with a brandy-soaked cherry.", 2],
-  ["Stabby Lambda", "Add 3oz of high end scotch and serve neat. Garnish: none!", 7],
+  ["Stabby Lambda", "Add 3oz of high end scotch and serve neat. Garnish: Sword stabbed through an ice cube!", 7],
   ["Mondrian Fury", "Float 4oz of mezcal in 16oz of tequila. Serve neat in an imperial pint. Garnish at your own risk.", 8],
   ["Corpse Reviver", "Add 1 oz Cognac, 1 oz Calvados and .5 oz Sweet vermouth to a shaker and fill with ice. Shake well and strain into a cocktail glass. Garnish: none", 2],
   ["Sassy Comrade", "Pour 2oz of low-shelf vodka into a shot glass and drink - do NOT sip.", 3],
   ["Capybara", "Pour 3 oz of brandy into a brandy snifter and enjoy", 9],
-  ["Boulevardier", "Add 1 oz Campari, 1 oz Sweet vermouth, and 1.25 oz Bourbon to a rocks glass filled with ice and stir to combine.  Pour into a rocks glass and garnish with an orange twist. To serve the drink up, add all the ingredients to a mixing glass and fill with ice.", 7],
-
+  ["Boulevardier", "Add 1 oz Campari, 1 oz Sweet vermouth, and 1.25 oz Bourbon to a rocks glass filled with ice and stir to combine.  Pour into a rocks glass and garnish with an orange twist. To serve the drink up, add all the ingredients to a mixing glass and fill with ice.", 7]
 ]
 
 recipe_list.each do |name, instruction, glass_id |
   Recipe.create(name: name, instruction: instruction, glass_id: glass_id)
+end
+
+ingredient_recipes_list = [
+  [1, 1],
+  [1, 2],
+  [1, 3],
+  [1, 4],
+  [5, 5],
+  [4, 6],
+  [3, 7],
+  [9, 8],
+  [1, 9],
+  [9, 10],
+  [2, 11],
+  [6, 12],
+  [5, 13],
+  [8, 14],
+  [7, 15],
+  [4, 16]
+]
+
+ingredient_recipes_list.each do |ingredient_id, recipe_id|
+  recipe = Recipe.find(recipe_id)
+  ingredient = Ingredient.find(ingredient_id)
+  recipe.ingredients.push(ingredient)
 end

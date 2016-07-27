@@ -11,23 +11,11 @@
 <div class="header">
   <img src="/img/speakeasy-primary.jpg" alt="" />
 </div>
-
-
-
-<h1>Recipes with <%= @ingredient.name %></h1>
-
-<div class="generic-cocktails">
-
-</div>
-
-<div class="options">
-
-  <ul>
-    <% if @ingredient.recipes() %>
-    <% @ingredient.recipes.each do | recipe | %>
-    <li><a href="/recipes/<%= recipe.id %>"><%= recipe.name %></a></li>
-    <% end %>
-    <% end %>
-  </ul>
-
+<h1>Cocktail Archive</h1>
+<div class="drink-list">
+<ul>
+  <% @recipes.each() do |recipe| %>
+  <li><a href="/recipes/<%= recipe.id() %>"><%= recipe.name() %></a></li>
+  <% end %>
+</ul>
 </div>
