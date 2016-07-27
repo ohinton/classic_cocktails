@@ -27,3 +27,11 @@ post ("/ingredients/recipes") do
   @recipes = Recipe.all
   erb(:results)
 end
+
+get ("/recipes/:id") do
+  @recipe = Recipe.find(params.fetch('id').to_i())
+  @ingredient = Ingredient.find(params.fetch('id').to_i())
+  glass_id = @recipe.glass_id
+  @glass = Glass.find(glass_id)
+  erb(:recipe_info)
+end
