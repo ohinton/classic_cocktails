@@ -13,20 +13,19 @@
 <div class="header">
   <img src="/img/speakeasy-primary.jpg" alt="" />
 </div>
-<h1>Your Cocktail</h1>
-<div class="drink-image">
-  <img src="/img/cocktails.jpeg" alt="" />
-  </div>
-<div class="recipe">
 
-<h3><%= @recipe.name %></h3>
+<h1>Your Cocktail</h1>
+
+<div class="recipe">
 
 <img src ="<%= @recipe.photo %>" alt="photo of recipe"/>
 
-<ul>
-  <li>Glass: <%= @glass.name %></li>
-</ul>
+<h3><%= @recipe.name %></h3>
+
+<p>Glass: <%= @glass.name %></p>
 
 <div class="cocktail-instructions">
   <p>Instructions: <%= @recipe.instruction %></p>
+</div>
+
 </div>
