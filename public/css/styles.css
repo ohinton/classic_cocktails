@@ -81,14 +81,6 @@ body {
   margin: 0;
 }
 
-.test-input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 20em;
-  padding-left: 2em;
-}
-
 .btn {
   background-color: steelblue !important;
 }
@@ -151,4 +143,9 @@ h2  {
 .drink-list li::before {
   content: url('../img/martini-icon.jpg');
 }
+
+.submit {
+  margin-left: 2em;
+}
+
 /*//media queries//*/
