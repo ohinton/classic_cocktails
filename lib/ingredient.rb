@@ -7,7 +7,7 @@ class Ingredient < ActiveRecord::Base
 
   private
 
-    define_method(:titlecase_name) do
+    def titlecase_name
       self.name=(name().titlecase())
     end
 end
