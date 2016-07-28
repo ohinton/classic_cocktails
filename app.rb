@@ -11,7 +11,7 @@ get ("/") do
 end
 
 get ("/ingredients") do
-  @ingredients = Ingredient.all
+  @ingredients = Ingredient.order(name: :asc)
   erb(:ingredients)
 end
 
