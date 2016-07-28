@@ -6,7 +6,7 @@ class Recipe < ActiveRecord::Base
 
 private
 
-  define_method(:titlecase_name) do
+  define_method (:titlecase_name) do
     self.name=(name().titlecase())
   end
 
