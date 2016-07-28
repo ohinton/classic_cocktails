@@ -30,7 +30,7 @@ recipe_list = [
   ["Stabby Lambda", "Add 3oz of high end scotch and serve over ice. Garnish: Sword stabbed through a lemon twist and candied ginger, seriously!", 7, "http://bit.ly/2akAOy9"],
   ["Mondrian Fury", "Float 4oz of mezcal in 16oz of tequila. Serve neat in an imperial pint. Garnish at your own risk.", 8, "http://bit.ly/2agunLR"],
   ["Corpse Reviver", "Add 1 oz Cognac, 1 oz Calvados and .5 oz Sweet vermouth to a shaker and fill with ice. Shake well and strain into a cocktail glass. Garnish: none", 2, "http://bit.ly/2atLY5X"],
-  ["Sassy Comrade", "Pour 2oz of low-shelf vodka into a shot glass and drink - do NOT sip.", 3, "http://bit.ly/2ae9IJv"],
+  ["Sassy Comrade", "Pour 2oz of low-shelf vodka into a shot glass and drink - do NOT sip.", 3, "http://bit.ly/2agXiPS"],
   ["Capybara", "Pour 3 oz of brandy into a brandy snifter and enjoy. Garnish with a cherry.", 9, "http://bit.ly/2ae9zWm"],
   ["Boulevardier", "Add 1.25 oz Bourbon, 1 oz Campari and 1 oz Sweet vermouth, to a rocks glass filled with ice and stir to combine. Pour into a rocks glass and garnish with an orange twist. Optional: serve the drink up", 7, "http://bit.ly/2akBbJg"],
   ["Death In The Afternoon", "4.5 oz Champagne, 1.5 oz Absinthe, Pour the absinthe into a Champagne flute or coupe. Top with the Champagne.", 6, "http://bit.ly/2aejdbx"],
