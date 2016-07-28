@@ -58,7 +58,6 @@ body {
 
 .options a {
   color: black;
-  padding: 1em;
 }
 
 .options a:hover {
@@ -119,6 +118,7 @@ h2  {
   margin-top: 1em;
   width: 30em;
   overflow: auto;
+  margin-bottom: 2em;
 }
 
 .drink-image {
