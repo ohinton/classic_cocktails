@@ -83,6 +83,8 @@ body {
 
 .btn {
   background-color: steelblue !important;
+  margin-top: 1em;
+  justify-content: center;
 }
 
 h1 {
@@ -148,4 +150,32 @@ h2  {
   margin-left: 2em;
 }
 
+.shaker {
+  margin-top: 4em;
+}
+
+.shake:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+ transform: translate3d (0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  90%, 10% {
+    transform: translate3d(0, -1px, 0);
+  }
+
+  80%, 20% {
+    transform: translate3d(0, 2px, 0);
+  }
+
+  70%, 50%, 30% {
+    transform: translate3d(0, -4px, 0);
+  }
+
+  60%, 40% {
+    transform: translate3d(0, 4px, 0);
+  }
+}
 /*//media queries//*/
