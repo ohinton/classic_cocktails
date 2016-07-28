@@ -17,8 +17,10 @@
 <h2>Choose Your Giggle Water</h2>
 <div class="test-input">
   <form action="/ingredients/recipes" method="post">
+    
     <select class="browser-default" name="ingredient">
     <option value="" disabled selected>Spirits</option>
+
     <% if @ingredients %>
       <% @ingredients.each do | ingredient |  %>
         <option value="<%= ingredient.id %>"><%= ingredient.name %></option>
