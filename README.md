@@ -26,14 +26,15 @@ $ postgres
 Open a new tab and run:
 ```
 $ rake db:create
+$ rake db:seed
 $ rake db:migrate
-$ rake db:test:prepare
 ```
 
 Start the Sinatra webserver:
 ```
 $ ruby app.rb
 ```
+
 Launch site by visiting `localhost:4567` in browser
 
 
