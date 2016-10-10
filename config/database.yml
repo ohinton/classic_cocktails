@@ -1,3 +1,7 @@
+production:
+  adapter: postgresql
+  database: cocktail_development
+
 development:
   adapter: postgresql
   database: cocktail_development
