@@ -25,9 +25,7 @@ $ postgres
 
 Open a new tab and run:
 ```
-$ rake db:create
-$ rake db:seed
-$ rake db:migrate
+$ rake db:setup
 ```
 
 Start the Sinatra webserver:
